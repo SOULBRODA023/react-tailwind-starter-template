@@ -148,4 +148,8 @@ div.swiper.div.swiper-wrapper div.swiper-slide {
   display:flex;
   justify-content: center;
   margin-top:1.2rem;
+  font-weight: 900;
+}
+.timer span{
+  color:#fff
 }
