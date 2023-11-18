@@ -1,36 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-//import './index.css'
+import { useState } from "react";
+import "./input.css";
+import Header from "./Header";
+import HeroPage from "./Heropage";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div className='ml-[10em]'>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo mb-[10em]" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="background">
+      <div className=" app | w-[80vw] min-h-[100vh] py-[2rem]  ">
+        <Header />
+        <HeroPage className = "max-[640px]: flex justify-center flex-col"/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
